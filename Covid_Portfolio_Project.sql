@@ -1,3 +1,9 @@
+/*
+Covid 19 Data Exploration 
+Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+*/
+
+
 select * from PortfolioProject..CovidDeaths
 order by 3,4
 
@@ -29,7 +35,7 @@ WHERE TABLE_NAME = 'CovidDeaths'
 AND COLUMN_NAME = 'total_deaths'
 
 --we found out that the column type is nvarchar.. In this case, we have two options: 
---change the column’s type, or convert its type on the fly when getting its sum.
+--change the columnâ€™s type, or convert its type on the fly when getting its sum.
 
 --what i did here: "-- Looking at total cases vs total-deaths": is converting the columns when doing the calculation divide.
 --result:
